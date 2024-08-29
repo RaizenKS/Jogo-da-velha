@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(82, 82, 207);
+}
+
+#ticTacToe{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(89, 89, 189);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.box-row{
+    display: flex;
+    height: calc(100%/3);
+}
+
+.row{
+    width: calc(100%/3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.row1{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.row2{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.row3{
+    border-bottom: 1px solid white;
+}
+
+.o{
+    color: rgb(21, 54, 202);
+}
+
+.x{
+    color: red;
+}
+
+#menu{
+    display: none;
+    z-index: 2;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: aliceblue;
+    border: 3px solid black;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#menu h2{
+    display: inline;
+    text-align: center;
+}
+
+#menu button{
+    width: 100%;
+    background-color: brown;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    border: 1px solid salmon;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#menu button:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(56, 13, 13);
+}
+
+#overlay{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
