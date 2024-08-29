@@ -29,6 +29,7 @@ class TicTacToe{
                 return
             }
         }
+        
         if(Array.from(this.boxRow).every(row => row.textContent !== '')){
             this.overlay.style.display = 'flex';
             this.menu.style.display = 'flex';
