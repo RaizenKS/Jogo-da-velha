@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(82, 82, 207);
+    background-image: url('imgs/background.jpg');
 }
 
 /* MENU INICIAL */
@@ -68,23 +68,28 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4.5rem;
-    font-family: 'Montserrat';
+    font-size: 5rem;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .row1{
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    border-right:3px solid rgb(30, 19, 51);
+    border-bottom:3px solid rgb(30, 19, 51);
 }
 
 .row2{
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    border-right:3px solid rgb(30, 19, 51);
+    border-bottom:3px solid rgb(30, 19, 51);
 }
 
 .row3{
-    border-bottom: 1px solid white;
+    border-bottom:3px solid rgb(30, 19, 51);
+}
+
+.row img{
+    width: 70%;
+    height: 70%;
 }
 
 /* COR DAS LETRAS*/
@@ -97,7 +102,7 @@ body{
 }
 
 /* MENU DE RESULTADO */
-#menu{
+#menu-over{
     display: none;
     z-index: 2;
     position: absolute;
@@ -110,12 +115,12 @@ body{
     flex-wrap: wrap;
 }
 
-#menu h2{
+#menu-over h2{
     display: inline;
     text-align: center;
 }
 
-#menu button{
+#menu-over button{
     width: 100%;
     background-color: brown;
     font-size: 2rem;
@@ -126,7 +131,7 @@ body{
     font-weight: bold;
 }
 
-#menu button:hover{
+#menu-over button:hover{
     color: rgb(255, 0, 0);
     background-color: rgb(56, 13, 13);
 }
@@ -141,3 +146,88 @@ body{
     opacity: 0.4;
 }
 
+.icon-gear{
+    position: absolute;
+    top: 3rem;
+    right: 10rem;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icon-gear:hover{
+    color: rgb(60, 122, 255);
+}
+
+#menu{
+    z-index: 2;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    background-color: aliceblue;
+    border: 3px solid black;
+    padding: 1rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#menu .icon-x{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#menu h2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+#menu button{
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #254ab3;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    background-color: rgb(62, 113, 221);
+    -webkit-appearance: none; 
+    width: 100%; 
+    height: 8px; 
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #254ab3;
+    cursor: pointer;
+  }
+  
+  
+  input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;  
+  }
+
+  input[type="range"]::-moz-range-thumb   
+   {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+ 
